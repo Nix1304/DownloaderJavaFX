@@ -21,7 +21,6 @@ class Controller {
         if(links[0].isNotEmpty())
         for (i in links.indices){
             val url = URL(links[i])
-            println(links[i])
             val ext = File(links[i]).extension
             val rbc = Channels.newChannel(url.openStream())
             if(saveName.isEmpty()) saveName = "untitled"
