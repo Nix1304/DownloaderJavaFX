@@ -24,7 +24,7 @@ class Main : Application() {
     companion object {
         @JvmStatic
         fun main(args: Array<String>) {
-            if (!File("config.json").exists()) Config.createFile()
+            if(!File("config.json").exists()) Config.createFile()
             launch(Main::class.java)
         }
     }
